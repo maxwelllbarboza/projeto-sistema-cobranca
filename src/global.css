@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Responsividade */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+.fullscreen {
+  width: 100vw;
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Fontes */
+
+
+.primary-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 130%;
+  color: #343447;
+  text-align: center;
+}
+
+/* TODO: Existem nunitos de tamanhos diferentes */
+.normal-nunito {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  line-height: 130%;
+}
+.bold-nunito {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  line-height: 50px;
+}
+.normal-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.1rem;
+}
+.bold-montserrat {
+  font-weight: 700;
+}
+.montserrat-16 {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.montserrat-18 {
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.nunito-14 {
+  font-family: Nunito;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.nunito-16 {
+  font-family: Nunito;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 800;
+}
+.nunito-18 {
+  font-family: Nunito;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nunito-19 {
+  font-family: Nunito;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #3f3f55;
+}
+
+/* Cores */
+
+:root {
+  --verde-normal: #0e8750;
+  --verde-dark: #034a2a;
+  --verde-light: #acd9c5;
+  --rosa-normal: #da0175;
+  --rosa-dark: #75003b;
+  --rosa-light: #f5a8d0;
+
+  --amarelo-normal: #c5a605;
+  --amarelo-light: #fcf6dc;
+  --amarelo-esmaecido: #e3dec8;
+  --vinho-normal: #971d1d;
+  --vinho-light: #ffefef;
+  --vinho-esmaecido: #e8caca;
+  --petroleo-normal: #1fa7af;
+  --petroleo-light: #eef6f6;
+  --petroleo-esmaecido: #d2dfe0;
+
+  --cinza-1: #343447;
+  --cinza-2: #3f3f55;
+  --cinza-3: #747488;
+  --cinza-4: #9b9bb2;
+  --cinza-5: #c8c8d7;
+  --cinza-6: #dedee9;
+  --cinza-7: #f0f0f5;
+  --cinza-8: #f8f8f9;
+
+  --sucesso-light: #4f78e3;
+  --sucesso-dark: #243f80;
+  --sucesso-light: #c3d4fe;
+  --atencao-normal: #ef8f00;
+  --atencao-dark: #cc7800;
+  --erro-normal: #e70000;
+  --erro-dark: #ae1100;
+  --erro-light: #f2d6d0;
+}
+
+/* Tema light e dark*/
+:root {
+  --step-color: var(--verde-normal);
+}
+
+.dark {
+  --step-color: var(--rosa-normal);
+}
+
+
+/* Geral */
+
+.default-input {
+  all: unset;
+  box-sizing: border-box;
+  width: 34.4rem;
+  height: 4.4rem;
+  padding-left: 1.4rem;
+  background-color: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  color: #667085;
+  font-size: 1.6rem;
+}
+.link-rosa {
+  color: var(--rosa-normal);
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .default-input {
+    width: min-content;
+  }
+}
+
+/* ------------Layout Básico ----------- */
+
+.display-flex {
+  display: flex;
+}
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.display-flex-column-centralizado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-flex-centralizado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-align {
+  display: flex;
+  align-items: center;
+}
+
+.alert-erro {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #e70000;
+}
+
+:root {
+  position: relative;
+}

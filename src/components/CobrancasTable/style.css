@@ -1,0 +1,91 @@
+.container-table-cobranca {
+  background: #ffffff;
+  width: 76%;
+  align-self: center;
+  padding: 3rem;
+  border-radius: 3rem;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 100px;
+}
+
+.top-table {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0px;
+}
+
+.top-table div,
+.table-line div {
+  width: 14.3%;
+}
+
+.top-table div {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-table div img {
+  cursor: pointer;
+}
+
+.table-line {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem;
+  border-top: 1px solid #eff0f6;
+}
+
+.btn-cob-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-cob-actions img {
+  cursor: pointer;
+}
+
+.table-line div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6e85;
+}
+
+.table-line .paga {
+  color: #1fa7af;
+  background-color: #eef6f6;
+  border-radius: 8px;
+  padding: 0px 15px;
+  font-weight: 600;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.table-line .vencida {
+  color: #971d1d;
+  background-color: #ffefef;
+  border-radius: 8px;
+  padding: 0px 15px;
+  font-weight: 600;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.table-line .pendente {
+  color: #c5a605;
+  background-color: #fcf6dc;
+  border-radius: 8px;
+  padding: 0px 15px;
+  font-weight: 600;
+
+  justify-content: center;
+  align-items: center;
+}

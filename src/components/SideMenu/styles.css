@@ -1,0 +1,58 @@
+/* --------Layout do SidMenu--------- */
+nav {
+  min-width: 11rem;
+  background: #f0f0f5;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+.containerNav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  gap: 8rem;
+}
+#classNav {
+  width: 100%;
+  height: 8rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+.ativado {
+  color: #da0175;
+  border-right: 2px solid #da0175;
+}
+.desativado {
+  color: #3f3f55;
+}
+.img-home-ativado {
+  background-image: url('./assets/btnhomeativado.svg');
+}
+.img-home-desativado {
+  background-image: url('./assets/btnhomedesativado.svg');
+}
+.img-cliente-ativado {
+  background-image: url('./assets/btnclieativado.svg');
+}
+.img-cliente-desativado {
+  background-image: url('./assets/btncliedesativado.svg');
+}
+.img-cobranca-ativado {
+  background-image: url('./assets/btncobativado.svg');
+}
+.img-cobranca-desativado {
+  background-image: url('./assets/btncobdesativado.svg');
+}

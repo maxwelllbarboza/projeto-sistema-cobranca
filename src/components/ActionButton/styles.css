@@ -1,0 +1,12 @@
+.action-button {
+  all: unset;
+  width: 16rem;
+  height: 3.3rem;
+  background-color: #da0175;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #f8f8f9;
+  line-height: 2.5rem;
+  cursor: pointer;
+}

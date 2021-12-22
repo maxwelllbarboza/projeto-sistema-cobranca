@@ -1,0 +1,56 @@
+.container-dados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-dados-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.btn-dados {
+  margin: 2rem;
+}
+
+.container-sucesso {
+  background-color: var(--cinza-7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+
+  border-radius: 3rem;
+
+  padding: 30px;
+  margin: 20px;
+}
+
+.eye {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 0.6rem;
+  cursor: pointer;
+}
+
+.loader {
+  border: 4px solid var(--cinza-4);
+  border-top: 4px solid var(--step-color);
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

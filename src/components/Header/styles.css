@@ -1,0 +1,108 @@
+/*--------- Estilos do layout do Header----------- */
+header {
+  width: calc(100vw - 7vw);
+  height: 10rem;
+  background: #f8f8f9;
+  position: relative;
+}
+.container-header {
+  padding: 2rem 10rem 2rem 5rem;
+  border-bottom: 1px solid #acd9c5;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 3rem 0 3rem;
+}
+
+.style-titulo {
+  display: flex;
+  gap: 1rem;
+}
+.style-menu li {
+  list-style: none;
+  margin-left: 1rem;
+}
+.sign-inicial-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dedee9;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+.sign-name {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-right: 18rem;
+}
+
+/*----------- Fontes do Header-------------- */
+.font-montserrat {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+}
+.font-nunit {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+}
+/*---------Tamanho das fontes do Header----------- */
+.text-size-26 {
+  font-size: 26px;
+}
+.text-size-22 {
+  font-size: 22px;
+}
+.text-size-18 {
+  font-size: 18px;
+}
+
+/*------------Cores do Header----------------*/
+.color-343447 {
+  color: #343447;
+}
+.color-0E8750 {
+  color: #0e8750;
+}
+.container-poup-up {
+  position: absolute;
+  top: 8rem;
+  right: 10rem;
+  gap: 2rem;
+  padding-left: 2rem;
+  border-radius: 8px;
+  align-items: center;
+  width: 9.9rem;
+  height: 5.5rem;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.font-poup-up {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 11px;
+  color: #747488;
+}
+.icon-logout {
+  height: 2.2rem;
+  width: 2rem;
+}
+
+/* -------Extras--------- */
+
+.font-pag-inter {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.color-first {
+  color: #0e8750;
+}
+.color-second {
+  color: #3f3f55;
+}

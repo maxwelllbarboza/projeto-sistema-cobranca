@@ -1,0 +1,163 @@
+.backgroud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background: rgba(145, 154, 150, 0.3);
+  backdrop-filter: blur(0.4rem);
+}
+
+.container-cobranca {
+  width: 60rem;
+  background: #ffffff;
+  border-radius: 30px;
+
+  position: relative;
+  padding: 4rem 6rem;
+}
+
+.btnClose {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.container-title {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.container-title h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 130%;
+
+  color: #3f3f55;
+}
+
+.form-cobranca {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.margin-botton-4 {
+  margin-bottom: 0.4rem;
+}
+
+.input-default-cobranca {
+  all: unset;
+  box-sizing: border-box;
+  height: 4.4rem;
+  padding-left: 1.4rem;
+  background-color: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+
+  font-family: Nunito;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #3f3f55;
+}
+
+.input-descricao {
+  height: 8.8rem;
+}
+
+.input-vencimento,
+.input-valor {
+  width: 23.2rem;
+}
+
+input::placeholder {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+
+  color: #747488;
+}
+
+.btn-pago,
+.btn-pendente {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  gap: 0.8rem;
+
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+  height: 4.8rem;
+
+  background: #f0f0f5;
+  border-radius: 1rem;
+
+  font-family: Nunito;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem;
+
+  color: #3f3f55;
+}
+
+.btn-pago {
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn-pendente {
+  margin-bottom: 10rem;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+  width: 23.05rem;
+  height: 3.4rem;
+
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+
+  border-radius: 1rem;
+}
+
+.btn-cancelar {
+  color: #0e8750;
+  background: #f8f8f9;
+  border: 1px solid #dedee9;
+  box-sizing: border-box;
+}
+
+.btn-aplicar {
+  color: #f8f8f9;
+  background: #da0175;
+}

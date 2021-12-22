@@ -1,0 +1,118 @@
+.modal-color {
+  background: rgba(145, 154, 150, 0.3);
+}
+
+.modal-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-bottom: 0;
+  margin: auto;
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  border-radius: 3rem;
+
+  padding: 4rem 5rem;
+
+  width: 49rem;
+}
+
+.modal-edit-title {
+  margin-bottom: 2rem;
+}
+
+.btn-close {
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.modal-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+}
+
+.form-nunito {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  color: #344054;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.default-modal {
+  width: 100%;
+}
+
+.default-input-secondary {
+  all: unset;
+  height: 4.4rem;
+  width: 17rem;
+  padding-left: 1.4rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #d0d5dd;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+  border-radius: 0.8rem;
+  font-family: "Inter", sans-serif;
+  color: #667085;
+  font-size: 1.6rem;
+}
+
+.btn-eye {
+  cursor: pointer;
+  position: absolute;
+  top: 4.3rem;
+  right: 2rem;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  all: unset;
+  cursor: pointer;
+  color: #f8f8f9;
+  box-sizing: border-box;
+  width: 16rem;
+  height: 4rem;
+
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  background: #da0175;
+  border-radius: 1rem;
+}

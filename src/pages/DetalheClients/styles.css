@@ -1,0 +1,4 @@
+.container-clients {
+  display: flex;
+  background-color: var(--cinza-8);
+}

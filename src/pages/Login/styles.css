@@ -1,0 +1,46 @@
+/* TODO: Verificar o tamanho dos paddings - Não fiz pixel perfect */
+.container-lateral-text {
+  color: var(--verde-dark);
+  padding: 100px 20px 0 20px;
+  text-align: center;
+  background-image: url("./assets/login-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.container-login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-email-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-password-input {
+  margin-top: 2rem;
+  margin-bottom: 4.6rem;
+  position: relative;
+}
+
+.labels-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-login{
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-lateral-text {
+    padding: 2rem;
+    height: 100%;
+    background: var(--cinza-6);
+  }
+}

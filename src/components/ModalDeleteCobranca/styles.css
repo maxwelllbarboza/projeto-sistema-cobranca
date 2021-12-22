@@ -1,0 +1,85 @@
+.modal-delet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(145, 154, 150, 0.3);
+}
+
+.card-delet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 60rem;
+  height: 40rem;
+
+  background: #ffffff;
+  border-radius: 3rem;
+}
+
+.container-delet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-delet p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 130%;
+
+  color: #cc7800;
+
+  margin-top: 1.3rem;
+}
+
+.container-button {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.btn-yes,
+.btn-no {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+
+  width: 10rem;
+  height: 2.4rem;
+
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.btn-no {
+  color: #ae1100;
+  background: #f2d6d0;
+}
+
+.btn-yes {
+  color: #034a2a;
+  background: #acd9c5;
+}
+
+.btn-yes:hover {
+  opacity: 0.8;
+}
+
+.btn-no:hover {
+  opacity: 0.8;
+}

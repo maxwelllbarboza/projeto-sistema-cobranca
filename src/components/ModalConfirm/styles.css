@@ -1,0 +1,27 @@
+.modal-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(145, 154, 150, 0.3);
+}
+
+.modal-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  width: 50rem;
+  height: 41.2rem;
+
+  background: #ffffff;
+  border-radius: 3rem;
+}

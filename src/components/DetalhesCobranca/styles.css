@@ -1,0 +1,152 @@
+.pointer {
+  cursor: pointer;
+}
+
+.container-modal-detalhes-cobrancas {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(145, 154, 150, 0.3);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-detalhes {
+  background-color: #ffffff;
+  width: 600px;
+  height: 461px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.title-modal {
+  display: flex;
+  margin-bottom: 1.6rem;
+  margin-top: 2rem;
+}
+
+.img-cobranca-modal {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.title-cobranca-modal {
+  margin-top: 40px;
+  margin-left: 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  color: #3f3f55;
+}
+.container-modal-detalhes-cobrancas .fechar-modal {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+.container-modal-detalhes-cobrancas h2 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 56px;
+  margin-bottom: 8px;
+  color: #3f3f55;
+}
+
+.container-modal-detalhes-cobrancas p {
+  color: #3f3f55;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 56px;
+  margin-bottom: 24px;
+}
+
+.container-modal-detalhes-cobrancas .detalhes-vencimento-valor,
+.detalhes-id-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-modal-detalhes-cobrancas .detalhes-nome {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container-modal-detalhes-cobrancas .detalhes-descricao {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.container-modal-detalhes-cobrancas .detalhes-descricao p {
+  color: #000000;
+}
+
+.detalhes-vencimento p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.detalhes-valor,
+.detalhes-status {
+  margin-left: 146px;
+}
+
+.detalhes-valor p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detalhes-id p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detalhes-status p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.container-modal-detalhes-cobrancas .cobranca-status-paga {
+  color: #1fa7af;
+  background: #eef6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px;
+  border-radius: 8px;
+}
+
+.container-modal-detalhes-cobrancas .cobranca-status-vencida {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #971d1d;
+  background: #ffefef;
+  padding: 0px 8px;
+  border-radius: 8px;
+}
+
+.container-modal-detalhes-cobrancas .cobranca-status-pendente {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #c5a605;
+  background: #fcf6dc;
+  padding: 0px 8px;
+  border-radius: 8px;
+}

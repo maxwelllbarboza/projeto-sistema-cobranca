@@ -1,0 +1,54 @@
+.container-cobrancas {
+  background-color: #f8f8f9;
+}
+.sign-cobrancas {
+  display: flex;
+}
+.sign-cobrancas-card {
+  display: flex;
+  flex-direction: column;
+}
+.top-cobrancas,
+.top-cobrancas div {
+  display: flex;
+}
+
+.top-cobrancas {
+  justify-content: space-between;
+  width: 76%;
+  align-self: center;
+  padding: 30px 0px;
+}
+
+.top-cobrancas div {
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}
+
+.top-cobrancas div h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 130%;
+  color: var(--cinza-2);
+}
+
+.top-cobrancas .lupa {
+  all: unset;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.input-pesquisa {
+  all: unset;
+  padding-left: 1rem;
+  position: relative;
+  width: 31.8rem;
+  height: 3.9rem;
+  background: #ffffff;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+}

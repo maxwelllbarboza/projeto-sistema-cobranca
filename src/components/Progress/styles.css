@@ -1,0 +1,160 @@
+.side-progress {
+  margin: 20% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  gap: 24px;
+}
+
+.step-title div {
+  color: var(--step-color);
+  cursor: pointer;
+
+  /* TODO: Remover isso utilizando classes globais para fonte*/
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.step-ball {
+  align-self: flex-start;
+  min-width: 32px;
+  width: 32px;
+  height: 32px;
+  background: var(--cinza-7);
+  border: 1px solid var(--step-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.step-ball::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 3.2px);
+  left: calc(50% - 3.2px);
+  width: 6.4px;
+  height: 6.4px;
+  background-color: var(--step-color);
+  border-radius: 50%;
+}
+
+.step-ball.active,
+.step-ball.completed {
+  background-color: var(--step-color);
+}
+
+.step-ball.active::after,
+.step-ball.completed::after {
+  background-color: var(--cinza-7);
+}
+
+.step-ball.completed::after {
+  width: 0px;
+  height: 0px;
+  top: 4px;
+  left: 8px;
+  content: url("./assets/icon.svg");
+}
+
+.step-label {
+  height: 40px;
+  margin: 0px auto auto calc(16px - 1.5px);
+  padding-left: 40px;
+  border-left: 3px solid var(--step-color);
+}
+
+/* TODO: Remover isso utilizando classes globais para fonte*/
+.step-label__text {
+  color: var(--cinza-2);
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.side-step:last-child .step-label {
+  border-left: 3px solid rgba(0, 0, 0, 0);
+}
+
+.progress-bar {
+  display: flex;
+  gap: 8px;
+  position: fixed;
+  bottom: 64px;
+}
+
+.progress-item {
+  background: var(--cinza-6);
+  width: 82px;
+  height: 6px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.progress-item.active {
+  background: var(--verde-normal);
+  cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+  .step-title {
+    flex-direction: column;
+    position: relative;
+  }
+  .step-title__text,
+  .step-label__text {
+    display: none;
+  }
+  .step-title__text.active {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    top: 35px;
+  }
+  .side-progress {
+    margin: 20px auto;
+    flex-direction: row;
+  }
+  .side-step {
+    display: flex;
+    flex-direction: row;
+  }
+  .step-label {
+    all: unset;
+    width: 100px;
+    position: relative;
+  }
+  .step-label::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: 0;
+    width: 100%;
+    padding-top: 3px;
+    background: var(--step-color);
+  }
+  .side-step:last-child .step-label {
+    display: none;
+  }
+  .progress-bar {
+    bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .step-title__text.active {
+    display: none;
+  }
+}

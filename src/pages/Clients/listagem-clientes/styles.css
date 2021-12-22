@@ -1,0 +1,116 @@
+.container-table-clientes {
+  background: #ffffff;
+  width: 76%;
+  align-self: center;
+  padding: 3rem;
+  border-radius: 3rem;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 100px;
+}
+
+.top-table-clientes {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0px;
+  border-bottom: 1px solid #eff0f6;
+}
+
+.top-table-clientes div,
+.table-line-clientes div {
+  width: 14.3%;
+}
+
+.top-table-clientes div {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-table-clientes div img {
+  cursor: pointer;
+}
+
+.table-line-clientes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 17px;
+  padding-bottom: 3px;
+  border-top: 1px solid #eff0f6;
+}
+
+.btn-cobranca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  position: relative;
+  height: 37px;
+}
+.btn-cobranca img {
+  position: absolute;
+  bottom: 15px;
+  z-index: 2;
+  right: 80px;
+}
+.btn-cobranca .span-cobranca {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 11px;
+  color: #da0175;
+  position: absolute;
+  top: 18px;
+  right: 76px;
+}
+
+.table-line-clientes div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6e85;
+}
+.table-line-clientes .em-dia {
+  color: #1fa7af;
+  background-color: #eef6f6;
+  border-radius: 8px;
+  padding: 0px 25px;
+  font-weight: 600;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.table-line-clientes .inadimplente {
+  color: #971d1d;
+  background-color: #ffefef;
+  border-radius: 8px;
+  padding: 0px 8px;
+  font-weight: 600;
+
+  justify-content: center;
+  align-items: center;
+}
+.ativado {
+  color: #da0175;
+  border-right: 2px solid #da0175;
+  
+}
+#navLink{
+  text-decoration: none;
+
+}
+.desativado {
+  color: #3f3f55;
+}
+
+@media (max-width: 1400px) {
+  .table-card {
+    align-self: flex-start;
+  }
+}

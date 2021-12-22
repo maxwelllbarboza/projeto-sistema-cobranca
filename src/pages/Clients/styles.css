@@ -1,0 +1,67 @@
+.container-clientes {
+  background-color: #f8f8f9;
+}
+.sign-clientes {
+  display: flex;
+}
+.sign-clientes-card {
+  display: flex;
+  flex-direction: column;
+}
+.top-clientes,
+.top-clientes div {
+  display: flex;
+}
+
+.top-clientes {
+  justify-content: space-between;
+  width: 76%;
+  align-self: center;
+  padding: 30px 0px;
+}
+
+.top-clientes div {
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}
+
+.top-clientes div h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 130%;
+  color: var(--cinza-2);
+}
+
+.top-clientes .lupa {
+  all: unset;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.input-pesquisa-clientes {
+  all: unset;
+  padding-left: 1rem;
+  position: relative;
+  width: 31.8rem;
+  height: 3.9rem;
+  background: #ffffff;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn-cliente {
+  all: unset;
+  width: 25rem;
+  height: 3.3rem;
+  background-color: #da0175;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #f8f8f9;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
